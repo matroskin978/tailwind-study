@@ -1,1 +1,56 @@
 @import "tailwindcss";
+
+@theme {
+    /* --*: initial; */
+    --font-dancing: "Dancing Script", cursive;
+    --font-sans: "Dancing Script", cursive;
+}
+
+@layer base {
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+@layer components {
+
+    /* .btn-primary {
+        color: var(--color-white);
+    } */
+    .btn-primary {
+        @apply font-mono px-3 py-1.5 text-white border rounded-md border-blue-700 bg-blue-500 hover:bg-blue-700 cursor-pointer transition
+    }
+}
+
+@layer utilities {
+    .container {
+
+        margin: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        @media (width >=576px) {
+            max-width: 540px;
+        }
+
+        @media (width >=768px) {
+            max-width: 720px;
+        }
+
+        @media (width >=992px) {
+            max-width: 960px;
+        }
+
+        @media (width >=1200px) {
+            max-width: 1140px;
+        }
+
+        @media (width >=1400px) {
+            max-width: 1320px;
+        }
+    }
+}
+
+.my-custom-color {
+    background-color: bisque;
+}
