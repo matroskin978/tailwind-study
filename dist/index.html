@@ -14,16 +14,36 @@
 <body>
 
     <div class="container">
-        <h1 class="text-4xl sm:text-6xl text-center sm:text-right lg:text-left text-amber-700 sm:text-blue-500">Hello,
-            world!!!</h1>
+        <h1 class="text-3xl text-center max-[400px]:text-emerald-500">Hello, world!</h1>
 
-        <h2 class="text-2xl my-3 max-md:text-center text-center2 md:text-left2">Hello header 2</h2>
+        <h2 class="text-2xl text-center my-3 text-tahiti bg-midnight">Hello, world 2!</h2>
 
-        <h3 class="my-3 text-2xl md:max-lg:text-center">Hello header 3</h3>
+        <h3 class="text-2xl text-center my-3 text-tahiti bg-emerald-700/[7.1%]">Hello, world 3!</h3>
 
-        <h4
-            class="text-3xl my-5 text-amber-600 xs:text-blue-600 sm:text-emerald-500 md:text-fuchsia-600 lg:text-purple-600 xl:text-shadow-amber-300 2xl:text-amber-600">
-            Hello header 4</h4>
+        <div class="text-center my-3">
+            <button
+                class="bg-sky-500 text-white px-5 py-2 hover:bg-sky-700 active:bg-amber-700 focus:bg-emerald-500">Button</button>
+        </div>
+
+        <form class="my-5">
+
+            <div class="my-5">
+                <label for="name" class="block">Name</label>
+                <input type="text" id="name" value="John Doe" class="border mt-2 px-3 py-2 disabled:bg-gray-200"
+                    disabled>
+            </div>
+
+            <div class="my-5">
+                <label for="email" class="block after:content-['_*'] after:text-[rgb(155,27,27)]">Email</label>
+                <input type="email" id="email" placeholder="E-mail"
+                    class="border mt-2 px-3 py-2 focus:outline-0 focus:border-sky-400 invalid:border-red-600 focus:invalid:border-red-300 not-placeholder-shown:valid:border-emerald-600 not-placeholder-shown:focus:border-emerald-300 placeholder:italic placeholder:text-gray-300">
+            </div>
+
+            <button type="submit"
+                class="bg-sky-500 text-white px-5 py-2 hover:bg-sky-700 active:bg-amber-700 focus:bg-emerald-500">Button</button>
+
+        </form>
+
     </div>
 
 </body>
