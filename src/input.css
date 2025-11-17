@@ -9,6 +9,7 @@
     --color-midnight: #121063;
     --color-tahiti: #3ab7bf;
     --color-bermuda: #78dcca;
+    /* --spacing: 0.125rem; */
 }
 
 @layer base {}
@@ -18,7 +19,8 @@
 @layer utilities {
     .container {
 
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
         padding-left: 1rem;
         padding-right: 1rem;
 
