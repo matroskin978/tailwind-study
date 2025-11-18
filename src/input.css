@@ -45,3 +45,13 @@
         }
     }
 }
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-size: 18px;
+    min-width: 320px;
+}
