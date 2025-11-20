@@ -31,7 +31,7 @@
 
 <body>
 
-    <div class="wrapper flex flex-col min-h-full">
+    <div class="wrapper flex flex-col h-full">
 
         <header class="header">
 
@@ -48,7 +48,43 @@
 
         </header>
 
-        <main class="main grow">Content</main>
+        <main class="main grow my-4">
+            <div class="container flex flex-col h-full">
+                <h1 class="text-2xl my-4">Content</h1>
+
+                <div class="grid lg:grid-cols-3 grow">
+
+                    <div class="bg-blue-300 lg:col-span-2 lg:order-2">
+                        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                            <div class="bg-sky-400 text-white text-center py-4">1</div>
+                            <div class="bg-sky-400 text-white text-center py-4">2</div>
+                            <div class="bg-sky-400 text-white text-center py-4">3</div>
+                            <div class="bg-sky-400 text-white text-center py-4">4</div>
+                            <div class="bg-sky-400 text-white text-center py-4">1</div>
+                            <div class="bg-sky-400 text-white text-center py-4">2</div>
+                            <div class="bg-sky-400 text-white text-center py-4">3</div>
+                            <div class="bg-sky-400 text-white text-center py-4">4</div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-300">Sidebar</div>
+                </div>
+
+                <!-- <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div class="bg-sky-400 text-white text-center py-4">1</div>
+                    <div class="bg-sky-400 text-white text-center py-4">2</div>
+                    <div class="bg-sky-400 text-white text-center py-4">3</div>
+                    <div class="bg-sky-400 text-white text-center py-4">4</div>
+                    <div class="bg-sky-400 text-white text-center py-4">1</div>
+                    <div class="bg-sky-400 text-white text-center py-4">2</div>
+                    <div class="bg-sky-400 text-white text-center py-4">3</div>
+                    <div class="bg-sky-400 text-white text-center py-4">4</div>
+                </div> -->
+
+
+            </div>
+        </main>
+
         <footer class="footer">Footer</footer>
 
     </div>
